@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   
   get '/main/:id' => 'application#show'
+  get '/new_user' => 'application#new'
+  get '/create_user' => 'application#create'
+  get '/main/:id/edit' => 'application#edit'
+  get '/update_user/:id' => 'application#update'
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
